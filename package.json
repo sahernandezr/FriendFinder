@@ -1,0 +1,23 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "friend finder",
+  "main": "index.js",
+  "scripts": {
+    "test": "\u001b[A\u001b[C\u001b\u001b[C\u001b[C\u001b[C\u001b[server.js)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahernandezr/FriendFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahernandezr/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/sahernandezr/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
