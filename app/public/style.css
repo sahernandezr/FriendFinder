@@ -1,0 +1,50 @@
+body {
+    background-image: url("lawndale_by_OrdArtz.jpg");
+    background-color: rgb(181,82,170);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Kalam', cursive;
+}
+
+.container {
+    max-width:960px;
+    text-align: center;
+    border-top: 15px;
+    padding-top: 20px;
+}
+
+.jumbotron, form {
+    background-color:transparent;
+    margin: 150px;
+    color: white;
+    background-color: rgba(181, 82, 170, 0.5);
+    width: 80%;
+    padding: 0 0;
+    border:25px 25px;
+    padding: 25px;
+    text-align: center;
+}
+
+.btn-light, .alert-primary {
+    color: white;
+    background-color:  rgba(181, 82, 170, 0.5);
+}
+
+.alert-primary {
+    border: 0;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+.dropdown {
+    color: black;
+}
+
+.question {
+    padding-top: 10px;
+    /* text-align: left;    */
+}
+
