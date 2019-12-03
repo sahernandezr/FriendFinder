@@ -62,5 +62,5 @@ app.post("/api/friends", (req, res) => {
 });
 
 app.listen(PORT, function () {
-    console.log("App listening on PORT " + PORT);
+    console.log(`Our app is running on port ${ PORT }`);
 });
