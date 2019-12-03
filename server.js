@@ -2,6 +2,7 @@ var express = require("express");
 var path = require("path");
 
 var app = express();
+const host = '0.0.0.0';
 var PORT = process.env.PORT || 8000;
 
 app.use(express.urlencoded({ extended: true }));
@@ -61,6 +62,6 @@ app.post("/api/friends", (req, res) => {
     res.json(newFriend);
 });
 
-app.listen(PORT, function () {
+app.listen(PORT, host, function () {
     console.log(`Our app is running on port ${ PORT }`);
 });
