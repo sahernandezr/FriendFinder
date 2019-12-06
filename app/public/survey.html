@@ -11,6 +11,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Kalam|Kristi|Over+the+Rainbow&display=swap"
         rel="stylesheet">
+        <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -203,14 +204,34 @@
         </div>
 
         <hr class="my-4">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submitInfo">Submit</button>
     </form>
 
 
     <div class="alert alert-primary" role="alert">
-        <a href="/api/friends">API Friends List</a> | <a href="https://github.com/sahernandezr/FriendFinder" target="_blank">GitHub
+        <a href="/api/friends">API Friends List</a> | <a href="https://github.com/sahernandezr/FriendFinder"
+            target="_blank">GitHub
             Repo</a>
     </div>
+
+    <script>
+            $(document).on("click", "#submitInfo", function() {
+                event.preventDefault();
+    var newFriend = {
+            customerName: $("#name").val().trim(),
+            customerEmail: $("#email").val().trim(),
+            customerID: $("#id").val().trim(),
+            phoneNumber: $("#phone").val().trim()
+        };
+    
+    $.post("/api/tables", newTable).then(function(data) {
+                console.log(data);
+            $("#name","#email","#id","#phone").val("");
+            $("#reservationSuccessful").show();
+        });
+    })
+        
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
