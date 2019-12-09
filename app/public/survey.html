@@ -11,11 +11,24 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Kalam|Kristi|Over+the+Rainbow&display=swap"
         rel="stylesheet">
-        <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+
 </head>
 
 <body>
+
 
     <form>
         <h1>Survey Questions</h1>
@@ -25,8 +38,8 @@
             <label for="Name">Name (Required)</label>
             <input type="text" class="form-control" id="name">
 
-            <label for="PhotoImage">Link to Photo Image (Required)</label>
-            <input type="url" class="form-control" id="photoImage">
+            <label for="Photo">Link to Photo Image (Required)</label>
+            <input type="url" class="form-control" id="photo">
         </div>
         <hr class="my-4">
         <h4>Rate how much you agree or disagree with the following statements on a scale of 1 to 5 <br>(1: Strongly
@@ -35,176 +48,137 @@
         <hr class="my-4">
         <div class="question">
             <h3>1. Hell is other people</h3>
-            <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select an answer
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item">2</a>
-                    <a class="dropdown-item">3</a>
-                    <a class="dropdown-item">4</a>
-                    <a class="dropdown-item">5 (Strongly Agree)</a>
-                </div>
+            <div class="form-group">
+                <select class="form-control" id="q1">
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
             </div>
         </div>
 
         <div class="question">
             <h3>2. Siblings suck</h3>
-            <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select an answer
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item">2</a>
-                    <a class="dropdown-item">3</a>
-                    <a class="dropdown-item">4</a>
-                    <a class="dropdown-item">5 (Strongly Agree)</a>
-                </div>
+            <div class="form-group">
+                <select class="form-control" id="q2">
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
             </div>
         </div>
 
         <div class="question">
             <h3>3. Pizza is life</h3>
-            <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select an answer
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item">2</a>
-                    <a class="dropdown-item">3</a>
-                    <a class="dropdown-item">4</a>
-                    <a class="dropdown-item">5 (Strongly Agree)</a>
-                </div>
+            <div class="form-group">
+                <select class="form-control" id="q3">
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
             </div>
         </div>
 
         <div class="question">
             <h3>4. Better dead than using last season's clothes</h3>
-            <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select an answer
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item">2</a>
-                    <a class="dropdown-item">3</a>
-                    <a class="dropdown-item">4</a>
-                    <a class="dropdown-item">5 (Strongly Agree)</a>
-                </div>
+            <div class="form-group">
+                <select class="form-control" id="q4">
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
             </div>
         </div>
 
         <div class="question">
             <h3>5. Art everyday keeps the crazy away</h3>
-            <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select an answer
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item">2</a>
-                    <a class="dropdown-item">3</a>
-                    <a class="dropdown-item">4</a>
-                    <a class="dropdown-item">5 (Strongly Agree)</a>
-                </div>
+            <div class="form-group">
+                <select class="form-control" id="q5">
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
             </div>
         </div>
 
         <div class="question">
             <h3>6. Rules suck</h3>
-            <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select an answer
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item">2</a>
-                    <a class="dropdown-item">3</a>
-                    <a class="dropdown-item">4</a>
-                    <a class="dropdown-item">5 (Strongly Agree)</a>
-                </div>
+            <div class="form-group">
+                <select class="form-control" id="q6">
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
             </div>
         </div>
 
         <div class="question">
             <h3>7. The day starts after noon</h3>
-            <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select an answer
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item">2</a>
-                    <a class="dropdown-item">3</a>
-                    <a class="dropdown-item">4</a>
-                    <a class="dropdown-item">5 (Strongly Agree)</a>
-                </div>
+            <div class="form-group">
+                <select class="form-control" id="q7">
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
             </div>
         </div>
 
         <div class="question">
             <h3>8. College is important</h3>
-            <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select an answer
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item">2</a>
-                    <a class="dropdown-item">3</a>
-                    <a class="dropdown-item">4</a>
-                    <a class="dropdown-item">5 (Strongly Agree)</a>
-                </div>
+            <div class="form-group">
+                <select class="form-control" id="q8">
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
             </div>
         </div>
 
         <div class="question">
             <h3>9. Padded walls are a great decor choice</h3>
-            <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select an answer
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item">2</a>
-                    <a class="dropdown-item">3</a>
-                    <a class="dropdown-item">4</a>
-                    <a class="dropdown-item">5 (Strongly Agree)</a>
-                </div>
+            <div class="form-group">
+                <select class="form-control" id="q9">
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
             </div>
         </div>
 
         <div class="question">
             <h3>10. High School is the best days of you life</h3>
-            <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select an answer
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item">1 (Strongly Disagree)</a>
-                    <a class="dropdown-item">2</a>
-                    <a class="dropdown-item">3</a>
-                    <a class="dropdown-item">4</a>
-                    <a class="dropdown-item">5 (Strongly Agree)</a>
-                </div>
+            <div class="form-group">
+                <select class="form-control" id="q10">
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
             </div>
         </div>
 
         <hr class="my-4">
-        <button type="submit" class="btn btn-primary" id="submitInfo">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submitInfo" data-toggle="modal"
+            data-target="#mymodal">Submit</button>
     </form>
 
 
@@ -214,34 +188,47 @@
             Repo</a>
     </div>
 
+    <div class="modal" tabindex="-1" role="dialog" id="bestMatchModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Your new best friend is:</h5>
+                    <p id="bestMatchName"></p>
+                    <img id="bestMatchPhoto" src="" />
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="bestmatchinfo">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
-            $(document).on("click", "#submitInfo", function() {
-                event.preventDefault();
-    var newFriend = {
-            customerName: $("#name").val().trim(),
-            customerEmail: $("#email").val().trim(),
-            customerID: $("#id").val().trim(),
-            phoneNumber: $("#phone").val().trim()
-        };
-    
-    $.post("/api/tables", newTable).then(function(data) {
+        $("#submitInfo").on("click", function () {
+            event.preventDefault();
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+            };
+
+            $.post("/api/friend", newFriend, function (data) {
                 console.log(data);
-            $("#name","#email","#id","#phone").val("");
-            $("#reservationSuccessful").show();
+                $("#bestMatchName").text(data.name);
+                $("#bestMatchPhoto").attr("src", data.photo);
+                $("#bestMatchModal").modal("toggle");
+
+            });
         });
-    })
-        
+
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
