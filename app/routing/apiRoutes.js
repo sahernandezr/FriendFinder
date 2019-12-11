@@ -13,7 +13,7 @@ module.exports = function (app) {
     app.post("/api/friend", (req, res) => {
         var newFriend = req.body;
         friends.push(newFriend);
-        res.json(newFriend);
+        
 
         var bestMatch = {
             name: "",
@@ -22,7 +22,7 @@ module.exports = function (app) {
 
         var allMatches = [];
 
-        function findMatch() {
+        
             for (var i = 0; i < friends.length-1; i++) {
                 var matchScores = [];
 
@@ -51,9 +51,11 @@ module.exports = function (app) {
                 console.log("Best match name: " + bestMatch.name);
                 console.log("Best match photo: "+ bestMatch.photo);
 
-        };
+                res.json(bestMatch);
 
-        findMatch();
+    
+
+
        
 
     });
